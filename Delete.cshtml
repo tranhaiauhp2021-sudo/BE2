@@ -1,0 +1,2 @@
+@model MaSV_LTW.Models.Category
+@{ViewBag.Title="Xóa danh mục";}<h1>Xóa danh mục?</h1><p>@Model.CategoryName</p>@Html.ValidationSummary(true,"",new{@class="text-danger"})@using(Html.BeginForm()){ @Html.AntiForgeryToken() <button type="submit">Xác nhận xóa</button> }<p>@Html.ActionLink("Hủy","Index")</p>

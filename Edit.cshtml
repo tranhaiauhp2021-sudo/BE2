@@ -1,0 +1,2 @@
+@model MaSV_LTW.Models.Category
+@{ViewBag.Title="Edit danh mục";}<h1>Sửa danh mục</h1>@using(Html.BeginForm()){@Html.AntiForgeryToken() @Html.Partial("_CategoryForm",Model)}<p>@Html.ActionLink("Về danh sách","Index")</p>
